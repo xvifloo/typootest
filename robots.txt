@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /xvi7admin/
+
+Sitemap: https://xvitypoo.vercel.app/sitemap.xml

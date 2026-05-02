@@ -1,0 +1,242 @@
+[
+  {
+    "id": 301, "title": "Period & Comma", "desc": "Master . and , — the most used punctuation marks", "diff": "beginner", "lang": "sym",
+    "parts": [
+      { "part": 1,  "title": ". period alone",      "text": ". . . . . . . . . . .. .. .. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ." },
+      { "part": 2,  "title": ", comma alone",       "text": ", , , , , , , , , , ,, ,, ,, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , ," },
+      { "part": 3,  "title": ". and , mixed",       "text": ". , . , . , , . , . ., ,. . , , . . , . , , . , . ., , . . , ., . , . , . , , . , . . , , . , ." },
+      { "part": 4,  "title": "Words with .",        "text": "end. go. run. stop. yes. ok. no. wait. help. start. done. fast. slow. well. good. bad. hot. cold." },
+      { "part": 5,  "title": "Words with ,",        "text": "one, two, three, four, five, six, seven, eight, nine, ten, red, blue, green, up, down, left, right," },
+      { "part": 6,  "title": "Short sentences",     "text": "go fast. run far. sit down. get up. be kind. stay calm. think fast. do well. work hard. play fair." },
+      { "part": 7,  "title": "List items",          "text": "cats, dogs, fish, birds, frogs, ants, bees, flies, mice, rats, cows, pigs, hens, ducks, geese, owls," },
+      { "part": 8,  "title": "Sentence pairs",      "text": "run fast, go far. sit down, rest well. work hard, play fair. be kind, stay calm. think deep, act right." },
+      { "part": 9,  "title": "Mixed usage",         "text": "yes, that is right. no, it is not. ok, let us go. wait, not yet. done, go home. fast, but safe. good, well done." },
+      { "part": 10, "title": ". , Mastery",         "text": "well done, you typed fast. be calm, stay cool. yes, go ahead. run, do not stop. ok, that is right. good, very good. end." }
+    ]
+  },
+  {
+    "id": 302, "title": "Question & Exclamation", "desc": "Type ? and ! with speed and accuracy", "diff": "beginner", "lang": "sym",
+    "parts": [
+      { "part": 1,  "title": "! alone",             "text": "! ! ! ! ! ! ! ! ! ! !! !! !! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! !" },
+      { "part": 2,  "title": "? alone",             "text": "? ? ? ? ? ? ? ? ? ? ?? ?? ?? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ?" },
+      { "part": 3,  "title": "! and ? mixed",       "text": "! ? ! ? ! ? ? ! ? ! !? ?! ! ? ? ! ! ? ! ? ? ! ? ! !? ? ! ! ? !? ! ? ! ? ! ? ? ! ? ! ! ? ? ! ? !" },
+      { "part": 4,  "title": "Short exclaims",      "text": "yes! go! run! stop! help! wow! great! nice! fast! good! no! wait! done! ok! sure! fine! cool! yes!" },
+      { "part": 5,  "title": "Short questions",     "text": "why? how? who? what? when? where? really? done? ready? going? ok? sure? can you? will you? is it?" },
+      { "part": 6,  "title": "Excited sentences",   "text": "run fast! go now! do it! stop here! come on! well done! great job! nice work! keep going! you did it!" },
+      { "part": 7,  "title": "Question sentences",  "text": "are you ready? can you go? is it done? where are you? who did it? when will it end? how fast can you type?" },
+      { "part": 8,  "title": "Mixed ! and ?",       "text": "really? yes! can you? sure! is it done? yes it is! are you ready? let us go! how fast? very fast! good?" },
+      { "part": 9,  "title": "Long phrases",        "text": "can you type fast? yes i can! how fast? very fast! do it now! ok! will you stop? no! why not? just because!" },
+      { "part": 10, "title": "! ? Mastery",         "text": "yes! are you ready? go now! how fast can you type? very fast! great job! can you do better? i think so! well done! keep going?" }
+    ]
+  },
+  {
+    "id": 303, "title": "Underscore & Hyphen", "desc": "Master _ and - used in names, codes, and text", "diff": "beginner", "lang": "sym",
+    "parts": [
+      { "part": 1,  "title": "- hyphen alone",      "text": "- - - - - - - - - - -- -- -- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -" },
+      { "part": 2,  "title": "_ underscore alone",  "text": "_ _ _ _ _ _ _ _ _ _ __ __ __ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _" },
+      { "part": 3,  "title": "- and _ mixed",       "text": "- _ - _ - _ _ - _ - -_ _- - _ _ - - _ - _ _ - _ - -_ _ - - _ -_ - _ - _ - _ _ - _ - - _ _ - _ -" },
+      { "part": 4,  "title": "Hyphenated words",    "text": "well-known top-tier up-to-date step-by-step one-on-one day-to-day old-school high-end low-cost long-term" },
+      { "part": 5,  "title": "Snake_case names",    "text": "first_name last_name user_id item_count page_title dark_mode light_mode font_size line_height max_width" },
+      { "part": 6,  "title": "File names",          "text": "my-file.txt your_doc.pdf new-data.csv old_list.json test-run.log my_notes.txt final-draft.docx index.html" },
+      { "part": 7,  "title": "Date with -",         "text": "2024-01-15 2025-03-28 2026-07-04 2023-12-31 2024-06-15 2025-09-22 2026-11-07 2023-04-18 2024-08-30" },
+      { "part": 8,  "title": "Code variables",      "text": "is_active has_error can_edit is_done get_value set_mode run_test stop_all find_user save_data load_file" },
+      { "part": 9,  "title": "Range notation",      "text": "1-10 5-15 20-30 100-200 a-z A-Z 0-9 low-high min-max start-end open-close on-off yes-no true-false" },
+      { "part": 10, "title": "_ - Mastery",         "text": "first_name well-known 2024-01-15 is_active top-tier user_id up-to-date save_data my-file.txt low-high 0-9 dark_mode final-draft" }
+    ]
+  },
+  {
+    "id": 304, "title": "Apostrophe & Quote", "desc": "Type ' and double-quote accurately in real-world contexts", "diff": "easy", "lang": "sym",
+    "parts": [
+      { "part": 1,  "title": "apostrophe alone",    "text": "' ' ' ' ' ' ' ' ' ' '' '' '' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' '" },
+      { "part": 2,  "title": "Contractions",        "text": "it's can't don't won't isn't wasn't aren't didn't couldn't wouldn't shouldn't he's she's they're we're" },
+      { "part": 3,  "title": "Possessives",         "text": "cat's dog's bird's fish's user's admin's team's data's file's code's page's site's app's key's value's" },
+      { "part": 4,  "title": "Short phrases 1",     "text": "it's done can't stop don't wait won't go isn't ready wasn't here aren't there didn't run couldn't start" },
+      { "part": 5,  "title": "Short phrases 2",     "text": "he's ready she's here they're done we're set you're good I'm fast it's ok that's right here's how" },
+      { "part": 6,  "title": "Code strings",        "text": "'name' 'value' 'id' 'class' 'type' 'src' 'href' 'alt' 'title' 'lang' 'style' 'data' 'key' 'url' 'path'" },
+      { "part": 7,  "title": "Quoted phrases 1",    "text": "she said 'run fast' he said 'stop here' they said 'well done' she asked 'are you ready' he said 'ok'" },
+      { "part": 8,  "title": "Quoted phrases 2",    "text": "'hello world' 'type fast' 'well done' 'great job' 'keep going' 'you can do it' 'stay focused' 'let us go'" },
+      { "part": 9,  "title": "Mixed contractions",  "text": "it's 'done' can't 'stop' they're 'ready' she said 'hello' don't 'wait' user's 'id' isn't it 'great'" },
+      { "part": 10, "title": "Quote Mastery",       "text": "it's done can't stop we're 'ready' she said 'run fast' don't wait user's 'id' isn't it 'great' they're 'set' now" }
+    ]
+  },
+  {
+    "id": 305, "title": "Slash & Backslash", "desc": "Type / and backslash used in paths, URLs, and code", "diff": "easy", "lang": "sym",
+    "parts": [
+      { "part": 1,  "title": "/ slash alone",       "text": "/ / / / / / / / / / // // // / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / /" },
+      { "part": 2,  "title": "URL paths",           "text": "/home /about /contact /login /signup /dashboard /settings /profile /search /results /api /data /files" },
+      { "part": 3,  "title": "Full URLs",           "text": "https://site.com/home https://app.com/login https://api.com/v1/data https://cdn.com/img/photo.jpg" },
+      { "part": 4,  "title": "File paths /",        "text": "/home/user/docs /var/www/html /usr/local/bin /etc/config /tmp/cache /opt/app/data /srv/web/files" },
+      { "part": 5,  "title": "Date with /",         "text": "01/01/2024 15/02/2025 28/03/2026 10/04/2023 22/05/2024 07/06/2025 19/07/2026 03/08/2023 14/09/2024" },
+      { "part": 6,  "title": "// comments",         "text": "// note // todo // fix // test // done // check // run // stop // ok // go // help // use // find" },
+      { "part": 7,  "title": "/* block comment */", "text": "/* start */ /* end */ /* note */ /* fix */ /* todo */ /* done */ /* ok */ /* check */ /* data */ /* run */" },
+      { "part": 8,  "title": "Mixed / usage",       "text": "https://site.com/api/v1 01/15/2024 // done /* end */ /home/user /search?q=type // fix /* note */" },
+      { "part": 9,  "title": "Shell commands",      "text": "ls /home cat /etc/hosts cd /var/www cp /src /dst mv /old /new rm /tmp/file mkdir /data chmod /app" },
+      { "part": 10, "title": "/ Mastery",           "text": "https://site.com/login 01/15/2024 // done /* fix */ /home/user /api/v1/data cd /var/www /* end */ // todo" }
+    ]
+  },
+  {
+    "id": 306, "title": "Plus, Minus & Equals", "desc": "Type + - = used in math, code, and expressions", "diff": "easy", "lang": "sym",
+    "parts": [
+      { "part": 1,  "title": "+ alone",             "text": "+ + + + + + + + + + ++ ++ ++ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +" },
+      { "part": 2,  "title": "= alone",             "text": "= = = = = = = = = = == == == = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =" },
+      { "part": 3,  "title": "+ = and - mixed",     "text": "+ = - + = - = + - + += -= =+ -+ +- =- + = - + = - = + - = + - += -+ =+ + = - + = - + = - + =" },
+      { "part": 4,  "title": "Simple equations",    "text": "1+1=2 2+2=4 3+3=6 4+4=8 5+5=10 6+6=12 7+7=14 8+8=16 9+9=18 10+10=20 15+5=20 20+30=50 25+75=100" },
+      { "part": 5,  "title": "Subtraction",         "text": "10-1=9 10-2=8 10-5=5 20-8=12 50-25=25 100-40=60 200-75=125 500-250=250 1000-333=667 99-9=90" },
+      { "part": 6,  "title": "Code assignment",     "text": "x=1 y=2 z=0 a=10 b=20 c=30 sum=0 count=1 total=100 min=0 max=100 step=5 rate=0.5 val=99 flag=true" },
+      { "part": 7,  "title": "Comparison ops",      "text": "x==y a!=b c>=d e<=f x===y a!==b count==0 flag==true value>=10 total<=100 score!=0 rate>=0.5" },
+      { "part": 8,  "title": "+= and -= ops",       "text": "x+=1 y+=5 z+=10 a-=1 b-=5 c-=10 total+=50 count+=1 score+=10 rate-=0.1 val+=100 min-=1 max+=1" },
+      { "part": 9,  "title": "Mixed math",          "text": "a+b=c x-y=z 10+20-5=25 x*y+z=w a/b-c=d (a+b)=c sum=a+b+c val=x-y+z x+=5 y-=3 z*=2 total=0" },
+      { "part": 10, "title": "+ - = Mastery",       "text": "x=10 y+=5 z-=2 x+y=15 a==b c!=d total+=100 score-=10 2+2=4 10-5=5 count==0 flag==true sum=a+b" }
+    ]
+  },
+  {
+    "id": 307, "title": "Parentheses & Brackets", "desc": "Type () [] {} with matching accuracy", "diff": "easy", "lang": "sym",
+    "parts": [
+      { "part": 1,  "title": "() alone",            "text": "() () () () () () () () () () ( ) ( ) () () ( ) () () ( ) () () () ( ) ( ) () () () () () () () ()" },
+      { "part": 2,  "title": "[] alone",            "text": "[] [] [] [] [] [] [] [] [] [] [ ] [ ] [] [] [ ] [] [] [ ] [] [] [] [ ] [ ] [] [] [] [] [] [] [] []" },
+      { "part": 3,  "title": "{} alone",            "text": "{} {} {} {} {} {} {} {} {} {} { } { } {} {} { } {} {} { } {} {} {} { } { } {} {} {} {} {} {} {} {}" },
+      { "part": 4,  "title": "() with content",     "text": "(a) (b) (1) (x) (ok) (yes) (no) (hi) (run) (type) (fast) (done) (stop) (go) (wait) (now) (start)" },
+      { "part": 5,  "title": "[] with content",     "text": "[a] [b] [1] [x] [ok] [yes] [no] [hi] [run] [type] [fast] [done] [stop] [go] [wait] [now] [start]" },
+      { "part": 6,  "title": "{} with content",     "text": "{a} {b} {1} {x} {ok} {id} {name} {value} {data} {key} {list} {map} {set} {type} {mode} {lang}" },
+      { "part": 7,  "title": "Nested brackets",     "text": "(a+b) [x-y] {p*q} (x+y) [a-b] {m/n} ((x)) [[y]] {{z}} ([a]) [{b}] {(c)} (1+2) [3-4] {5*6}" },
+      { "part": 8,  "title": "Function calls",      "text": "run() stop() go() wait() start() end() get() set() add() remove() find() update() save() load() reset()" },
+      { "part": 9,  "title": "Code blocks",         "text": "if(x){} for(i){} while(n){} fn(a,b){} get[0] set[i] map[key] arr[0] obj[id] list[n] data[x] val[k]" },
+      { "part": 10, "title": "()[]{}  Mastery",     "text": "run() [a+b] {id} if(x){y} get[0] fn(a,b) {data} [list] (stop) {key} arr[i] map[key] for(i){j} obj.set()" }
+    ]
+  },
+  {
+    "id": 308, "title": "At & Hash", "desc": "Type @ and # used in email, social, and code", "diff": "easy", "lang": "sym",
+    "parts": [
+      { "part": 1,  "title": "@ alone",             "text": "@ @ @ @ @ @ @ @ @ @ @@ @@ @@ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @" },
+      { "part": 2,  "title": "# alone",             "text": "# # # # # # # # # # ## ## ## # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #" },
+      { "part": 3,  "title": "@ and # mixed",       "text": "@ # @ # @ # # @ # @ @# #@ @ # # @ @ # @ # # @ # @ @# # @ @ # @# @ # @ # @ # # @ # @ @ # # @ # @" },
+      { "part": 4,  "title": "Email addresses",     "text": "user@mail.com admin@site.com test@app.com info@web.com help@dev.com name@host.com code@api.com" },
+      { "part": 5,  "title": "Social handles",      "text": "@user @admin @dev @team @support @help @info @news @tech @code @web @app @site @blog @shop @store" },
+      { "part": 6,  "title": "Hashtags",            "text": "#help #code #type #fast #learn #skill #work #data #web #app #tech #news #dev #test #run #build #go" },
+      { "part": 7,  "title": "CSS id selectors",    "text": "#id #name #title #header #footer #nav #main #page #form #input #btn #link #box #card #wrap #list" },
+      { "part": 8,  "title": "Code decorators",     "text": "@app @get @post @put @delete @route @login @auth @admin @role @user @cache @log @test @run @task" },
+      { "part": 9,  "title": "Mixed usage",         "text": "user@mail.com #help @admin send to @team use #code login at @site tag with #dev mail to info@web.com" },
+      { "part": 10, "title": "@ # Mastery",         "text": "user@mail.com @admin #code @team #help admin@site.com #dev @support #web info@app.com @user #fast @news" }
+    ]
+  },
+  {
+    "id": 309, "title": "Star & Ampersand", "desc": "Type * and & used in code, markdown, and URLs", "diff": "medium", "lang": "sym",
+    "parts": [
+      { "part": 1,  "title": "* alone",             "text": "* * * * * * * * * * ** ** ** * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *" },
+      { "part": 2,  "title": "& alone",             "text": "& & & & & & & & & & && && && & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & & &" },
+      { "part": 3,  "title": "* and & mixed",       "text": "* & * & * & & * & * *& &* * & & * * & * & & * & * *& & * * & *& * & * & * & & * & * * & & * & *" },
+      { "part": 4,  "title": "* in markdown",       "text": "*bold* **bold** *note* **key** *word* **text** *code* **name** *type* **fast** *run* **stop**" },
+      { "part": 5,  "title": "* as wildcard",       "text": "*.txt *.pdf *.jpg *.png *.mp4 *.zip *.js *.css *.html *.json *.csv *.xml *.php *.py *.ts *.jsx" },
+      { "part": 6,  "title": "* in math",           "text": "2*3=6 4*5=20 6*7=42 8*9=72 3*3=9 5*5=25 7*7=49 9*9=81 10*10=100 12*12=144 15*4=60 25*4=100" },
+      { "part": 7,  "title": "& in URLs",           "text": "page=1&sort=asc id=5&type=user name=a&val=b key=x&data=y mode=dark&lang=en size=lg&color=red" },
+      { "part": 8,  "title": "&& in code",          "text": "a&&b x&&y ok&&done true&&false stop&&go run&&end fast&&safe good&&clean yes&&no check&&pass" },
+      { "part": 9,  "title": "HTML entities",       "text": "&amp; &lt; &gt; &nbsp; &copy; &reg; &trade; &bull; &mdash; &ndash; &laquo; &raquo; &cent; &pound;" },
+      { "part": 10, "title": "* & Mastery",         "text": "*.txt *bold* 2*3=6 a&&b page=1&sort=asc **key** &amp; &lt; x&&y *note* 4*5=20 id=5&type=user &&" }
+    ]
+  },
+  {
+    "id": 310, "title": "Percent & Dollar", "desc": "Type % and $ used in finance, code, and markup", "diff": "medium", "lang": "sym",
+    "parts": [
+      { "part": 1,  "title": "% alone",             "text": "% % % % % % % % % % %% %% %% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %" },
+      { "part": 2,  "title": "$ alone",             "text": "$ $ $ $ $ $ $ $ $ $ $$ $$ $$ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $" },
+      { "part": 3,  "title": "% and $ mixed",       "text": "% $ % $ % $ $ % $ % %$ $% % $ $ % % $ % $ $ % $ % %$ $ % % $ %$ % $ % $ % $ $ % $ % % $ $ % $ %" },
+      { "part": 4,  "title": "Percentage values",   "text": "5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% 100% 12.5% 33% 66%" },
+      { "part": 5,  "title": "Dollar amounts",      "text": "$1 $5 $10 $20 $50 $100 $500 $1.50 $9.99 $12.50 $99.99 $100.00 $199.99 $299.99 $999.99 $1000.00" },
+      { "part": 6,  "title": "Finance mix",         "text": "$49.99 20% off $9.99 save 15% $199 10% tax $500 25% down $1000 5% rate $2500 50% done $100 100%" },
+      { "part": 7,  "title": "CSS values",          "text": "width:50% height:100% left:25% right:75% top:0% bottom:100% margin:5% padding:10% font:120%" },
+      { "part": 8,  "title": "Shell variables",     "text": "$PATH $HOME $USER $SHELL $PWD $LANG $PORT $HOST $BASE $ROOT $NAME $KEY $VAL $ID $APP $LOG $DB" },
+      { "part": 9,  "title": "Format strings",      "text": "%s %d %f %i %o %x %c %b %e %g %p %u %ld %lf %05d %08.2f %-10s %+d %0.2f %10.4f %3d" },
+      { "part": 10, "title": "% $ Mastery",         "text": "$49.99 20% off $PATH 50% width $USER $1000 5% tax width:80% $HOME 25% down %s %d $99.99 100% done" }
+    ]
+  },
+  {
+    "id": 311, "title": "Angle Brackets & Pipe", "desc": "Type < > | used in HTML, shell, and comparisons", "diff": "medium", "lang": "sym",
+    "parts": [
+      { "part": 1,  "title": "< alone",             "text": "< < < < < < < < < < << << << < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < <" },
+      { "part": 2,  "title": "> alone",             "text": "> > > > > > > > > > >> >> >> > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > >" },
+      { "part": 3,  "title": "| alone",             "text": "| | | | | | | | | | || || || | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |" },
+      { "part": 4,  "title": "HTML open tags",      "text": "<html> <head> <body> <div> <p> <h1> <h2> <ul> <li> <a> <img> <input> <form> <span> <nav> <footer>" },
+      { "part": 5,  "title": "HTML close tags",     "text": "</html> </head> </body> </div> </p> </h1> </h2> </ul> </li> </a> </form> </span> </nav> </footer>" },
+      { "part": 6,  "title": "HTML pairs",          "text": "<div></div> <p></p> <h1></h1> <ul></ul> <li></li> <span></span> <nav></nav> <a></a> <form></form>" },
+      { "part": 7,  "title": "< > comparison",      "text": "a<b x>y 5<10 20>15 n<100 m>0 count<max score>min val<99 total>0 size<1000 rate>0.5 age<18 num>100" },
+      { "part": 8,  "title": "| pipe in shell",     "text": "ls | grep cat | wc sort | uniq ps | grep find | xargs echo | tee head | tail cut | sort ls | head" },
+      { "part": 9,  "title": "|| in code",          "text": "a||b x||y ok||done true||false stop||go run||end fast||safe good||clean yes||no check||pass x||0" },
+      { "part": 10, "title": "< > | Mastery",       "text": "<div></div> a<b x>y ls|grep a||b <p></p> count<max sort|uniq x||0 <nav></nav> 5<10 20>15 || cat|wc" }
+    ]
+  },
+  {
+    "id": 312, "title": "Tilde, Caret & Grave", "desc": "Type ~ ^ and backtick used in code and markdown", "diff": "medium", "lang": "sym",
+    "parts": [
+      { "part": 1,  "title": "~ alone",             "text": "~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~~ ~~ ~~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~" },
+      { "part": 2,  "title": "^ alone",             "text": "^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^^ ^^ ^^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^" },
+      { "part": 3,  "title": "backtick alone",      "text": "` ` ` ` ` ` ` ` ` ` `` `` `` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` `" },
+      { "part": 4,  "title": "~ home and regex",    "text": "~/docs ~/home ~/app ~/data ~/config ~/cache ~/tmp ~/bin ~/lib ~/src ~user ~admin ~root ~name ~path" },
+      { "part": 5,  "title": "^ power and start",   "text": "2^3 3^2 4^2 5^2 2^8 2^10 x^2 y^3 a^n b^m 10^3 n^0 r^2 s^3 t^4 x^y a^b c^d e^f g^h x^2+y^2=z^2" },
+      { "part": 6,  "title": "backtick inline code","text": "`code` `var` `fn` `run` `get` `set` `add` `del` `key` `val` `id` `name` `type` `mode` `lang` `path`" },
+      { "part": 7,  "title": "triple backtick",     "text": "```js ```ts ```py ```html ```css ```json ```bash ```shell ```sql ```php ```go ```rust ```cpp ```java" },
+      { "part": 8,  "title": "~= and ^= in css",   "text": "[class~=btn] [id^=nav] [src~=img] [href^=http] [type~=text] [name^=user] [data~=id] [class^=card]" },
+      { "part": 9,  "title": "Mixed ~ ^ backtick",  "text": "~/home 2^8=256 `code` ```js ^start ~match x^2 `var` 2^10=1024 ~/config [id^=nav] ```py `fn` ~regex" },
+      { "part": 10, "title": "~ ^ ` Mastery",       "text": "~/docs 2^3=8 `run` ```js [id^=nav] x^2+y^2 `get` 2^8=256 ~/home ```py ^start [class~=btn] `code`" }
+    ]
+  },
+  {
+    "id": 313, "title": "Common Symbol Combos", "desc": "Type frequent 2-symbol pairs used in real coding", "diff": "hard", "lang": "sym",
+    "parts": [
+      { "part": 1,  "title": "=> and ->",           "text": "=> -> => -> => -> -> => -> => => -> -> => => -> => -> => -> -> => -> => => -> -> => => -> => ->" },
+      { "part": 2,  "title": "== and !=",           "text": "== != == != == != != == != == == != != == == != == != == != != == != == == != != == == != == !=" },
+      { "part": 3,  "title": "+= -= *= /=",         "text": "+= -= *= /= += -= *= /= += -= *= /= += -= *= /= += -= *= /= += -= *= /= += -= *= /= += -=" },
+      { "part": 4,  "title": "&& and ||",           "text": "&& || && || && || || && || && && || || && && || && || && || || && || && && || || && && || &&" },
+      { "part": 5,  "title": ":: and ..",           "text": ":: .. :: .. :: .. .. :: .. :: :: .. .. :: :: .. :: .. :: .. .. :: .. :: :: .. .. :: :: .. ::" },
+      { "part": 6,  "title": "<= and >=",           "text": "<= >= <= >= <= >= >= <= >= <= <= >= >= <= <= >= <= >= <= >= >= <= >= <= <= >= >= <= <= >= <=" },
+      { "part": 7,  "title": "// and /* */",        "text": "// /* */ // /* */ /* // */ /* */ // // /* // */ /* */ // /* */ // /* */ // // /* */ // /* */" },
+      { "part": 8,  "title": "!= and ===",          "text": "!= === != === != === === != === != != === === != != === != === != === === != === != != ===" },
+      { "part": 9,  "title": "?. and ??",           "text": "?. ?? ?. ?? ?. ?? ?? ?. ?? ?. ?. ?? ?? ?. ?. ?? ?. ?? ?. ?? ?? ?. ?? ?. ?. ?? ?? ?. ?. ??" },
+      { "part": 10, "title": "Combo Mastery",       "text": "=> -> == != += -= && || <= >= :: // /* */ === !== ?. ?? *= /= .. =>x ->y a==b c!=d x+=1 a&&b c||d" }
+    ]
+  },
+  {
+    "id": 314, "title": "Email & URL Patterns", "desc": "Type realistic email and URL strings fluently", "diff": "hard", "lang": "sym",
+    "parts": [
+      { "part": 1,  "title": "Simple emails",       "text": "a@b.com x@y.net m@n.org p@q.io u@v.dev j@k.app s@t.co d@e.in f@g.bd h@i.uk l@m.us r@s.ca t@u.au" },
+      { "part": 2,  "title": "Real-style emails",   "text": "user@gmail.com admin@yahoo.com test@hotmail.com info@outlook.com help@proton.me dev@icloud.com" },
+      { "part": 3,  "title": "Work emails",         "text": "john@company.com jane@firm.org mark@agency.net sara@studio.io ali@tech.dev team@support.co" },
+      { "part": 4,  "title": "URLs http/https",     "text": "http://site.com https://app.com http://api.io https://web.net http://cdn.org https://dev.app" },
+      { "part": 5,  "title": "URLs with paths",     "text": "https://site.com/home https://app.com/login https://api.com/v1 https://web.net/about https://cdn.org/img" },
+      { "part": 6,  "title": "URLs with params",    "text": "site.com/search?q=type site.com/list?page=1 app.com/data?id=5 web.net/user?name=ali api.io/get?key=x" },
+      { "part": 7,  "title": "URLs with anchors",   "text": "site.com/#home site.com/#about app.com/#login web.net/#top api.io/#docs site.com/#faq app.com/#help" },
+      { "part": 8,  "title": "Full complex URLs",   "text": "https://site.com/list?page=2&sort=asc https://app.com/user?id=5&mode=edit https://api.io/v2?key=x&fmt=json" },
+      { "part": 9,  "title": "Email subdomains",    "text": "user@mail.company.com admin@api.site.net info@cdn.web.org help@dev.app.io test@stage.app.com" },
+      { "part": 10, "title": "Email URL Mastery",   "text": "user@gmail.com https://site.com/login?id=5&mode=dark admin@api.site.net https://app.com/#home?q=type&page=1" }
+    ]
+  },
+  {
+    "id": 315, "title": "Code Line Patterns", "desc": "Type realistic lines of code with all symbols", "diff": "expert", "lang": "sym",
+    "parts": [
+      { "part": 1,  "title": "Variable declare",    "text": "let x=0; let y=1; let z=10; let a=true; let b=false; let s='ok'; let n=null; let arr=[]; let obj={};" },
+      { "part": 2,  "title": "If statements",       "text": "if(x>0){} if(y==1){} if(z!=0){} if(a&&b){} if(x||y){} if(!flag){} if(n>=10){} if(m<=5){} if(x===y){}" },
+      { "part": 3,  "title": "Function calls",      "text": "run() stop() go(x) set(y) get(z) add(a,b) del(id) find(key) save(data) load(path) reset() init(opts)" },
+      { "part": 4,  "title": "Array operations",    "text": "arr[0] arr[i] arr[n-1] arr.push(x) arr.pop() arr.map(fn) arr.filter(fn) arr.find(fn) arr.length arr.slice(0,5)" },
+      { "part": 5,  "title": "Object access",       "text": "obj.id obj.name obj.type obj[key] obj?.name obj?.id obj.fn() obj.set(v) obj.get(k) obj.data obj.list" },
+      { "part": 6,  "title": "Arrow functions",     "text": "x=>x+1 (a,b)=>a+b (x)=>{} ()=>run() (n)=>n*2 (s)=>s.trim() (a,b)=>{return a+b;} x=>x>0 n=>n!=0" },
+      { "part": 7,  "title": "Template literals",   "text": "`${x}` `${a+b}` `id=${id}` `name=${name}` `url=${url}` `val=${val}` `${x}+${y}=${z}` `hello ${name}!`" },
+      { "part": 8,  "title": "Regex patterns",      "text": "/^[a-z]+$/ /\\d+/ /[0-9]{4}/ /[a-zA-Z]/ /\\s+/ /[^a-z]/ /^\\w+/ /\\d{2,4}/ /[a-z0-9]+/ /^[A-Z]/" },
+      { "part": 9,  "title": "CSS rules",           "text": ".btn{} #nav{} h1,h2{} a:hover{} p::after{} [class~=x]{} *{margin:0;} body{font:16px;} .wrap{width:100%;}" },
+      { "part": 10, "title": "Code Mastery",        "text": "let x=0; if(x>0){run()} arr.map(n=>n*2) `${name}` obj?.id .btn:hover{} (a,b)=>a+b x===y&&flag arr[0]" }
+    ]
+  },
+  {
+    "id": 316, "title": "Symbol Grand Master", "desc": "Ultimate challenge — all symbols combined at full speed", "diff": "expert", "lang": "sym",
+    "parts": [
+      { "part": 1,  "title": "All basic symbols",   "text": ". , ! ? - _ ' / + = % $ @ # * & | < > ^ ~ ( ) [ ] { } . , ! ? - _ ' / + = % $ @ # * &" },
+      { "part": 2,  "title": "Symbol pairs sprint", "text": "=> -> == != += -= && || <= >= :: // === !== ?. ?? *= /= ~= ^= $= |= &= << >>" },
+      { "part": 3,  "title": "Real code line I",    "text": "const fn=(a,b)=>{return a+b;}; let x=fn(1,2); if(x>0&&x<10){console.log(`result:${x}`);}" },
+      { "part": 4,  "title": "Real code line II",   "text": "const data={id:1,name:'ali',tags:['dev','web']}; const {id,name}=data; arr.push({...data,active:true});" },
+      { "part": 5,  "title": "Real code line III",  "text": "async function get(url){const res=await fetch(url); if(!res.ok)throw new Error(res.status); return res.json();}" },
+      { "part": 6,  "title": "HTML full line",      "text": "<div id='app' class='wrap'> <h1>Hello!</h1> <p>Go to <a href='https://site.com/#top'>site.com</a></p> </div>" },
+      { "part": 7,  "title": "CSS full rule",       "text": ".btn-primary:hover{background:#007bff;color:#fff;border:1px solid rgba(0,123,255,.5);transform:scale(1.02);}" },
+      { "part": 8,  "title": "Shell command line",  "text": "ls -la ~/docs | grep '*.txt' | sort -r | head -20 > output.txt && echo 'done: $?' || echo 'failed!'" },
+      { "part": 9,  "title": "URL with all parts",  "text": "https://user:pass@api.site.com:8080/v1/data?id=5&fmt=json&sort=asc#results" },
+      { "part": 10, "title": "Grand Master Final",  "text": "const x=await fn({id:1,url:'https://api.com/v1?key=abc&fmt=json',[sym]:true}); x?.data?.map(n=>n*2)??[];" }
+    ]
+  }
+]

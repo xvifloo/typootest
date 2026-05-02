@@ -1,0 +1,24 @@
+{
+  "rewrites": [
+    { "source": "/xvi7admin", "destination": "/xvi7admin/index.html" },
+    { "source": "/xvi7admin/dashboard", "destination": "/xvi7admin/dashboard.html" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
+        { "key": "X-XSS-Protection", "value": "1; mode=block" }
+      ]
+    },
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin",  "value": "https://xvityping.vercel.app" },
+        { "key": "Access-Control-Allow-Methods", "value": "POST, OPTIONS" },
+        { "key": "Access-Control-Allow-Headers", "value": "Content-Type, x-site-token" }
+      ]
+    }
+  ]
+}

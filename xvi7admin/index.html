@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Admin Login — Xvitypoo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{min-height:100vh;display:flex;align-items:center;justify-content:center;
+      background:#060a12;font-family:'DM Sans',sans-serif;padding:16px}
+    .card{background:linear-gradient(145deg,#0d1828,#080f1c);
+      border:1px solid rgba(0,212,177,.2);border-radius:22px;
+      padding:36px 30px 28px;width:100%;max-width:380px;
+      box-shadow:0 24px 60px rgba(0,0,0,.6)}
+    .logo-wrap{display:flex;flex-direction:column;align-items:center;margin-bottom:22px}
+    .logo-box{width:52px;height:52px;border-radius:14px;
+      background:linear-gradient(135deg,rgba(0,212,177,.12),rgba(124,58,237,.12));
+      border:1px solid rgba(0,212,177,.28);display:flex;align-items:center;
+      justify-content:center;margin-bottom:12px}
+    h1{font-family:'Oxanium',sans-serif;font-size:1.35rem;font-weight:800;
+      background:linear-gradient(135deg,#00d4b1,#a78bfa);
+      -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+      background-clip:text;margin-bottom:4px;text-align:center}
+    .sub{color:#4f627a;font-size:.8rem;text-align:center}
+    .grp{margin-bottom:14px}
+    .grp label{display:block;font-size:.69rem;font-weight:700;color:#8899b5;
+      text-transform:uppercase;letter-spacing:.09em;margin-bottom:5px}
+    .inp-wrap{position:relative}
+    .inp-wrap input{width:100%;padding:11px 42px 11px 13px;
+      background:rgba(255,255,255,.04);
+      border:1.5px solid rgba(255,255,255,.1);border-radius:10px;
+      color:#dde3f0;font-size:.88rem;outline:none;transition:border .2s;
+      box-sizing:border-box}
+    .inp-wrap input:focus{border-color:#00d4b1;box-shadow:0 0 0 3px rgba(0,212,177,.1)}
+    .eye-btn{position:absolute;right:11px;top:50%;transform:translateY(-50%);
+      background:none;border:none;color:#4f627a;cursor:pointer;
+      padding:4px;line-height:1;font-size:16px;transition:color .2s}
+    .eye-btn:hover{color:#00d4b1}
+    .login-btn{width:100%;padding:12px;margin-top:4px;
+      background:linear-gradient(135deg,#00d4b1,#00b89c);
+      color:#060a12;border:none;border-radius:10px;
+      font-family:'Oxanium',sans-serif;font-size:.95rem;font-weight:700;
+      cursor:pointer;transition:opacity .2s}
+    .login-btn:disabled{opacity:.55;cursor:not-allowed}
+    .err-box{display:none;margin-top:12px;padding:10px 12px;
+      background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.2);
+      border-radius:9px;color:#ef4444;font-size:.78rem;text-align:center;
+      white-space:pre-line;line-height:1.5}
+    .err-box.show{display:block}
+    .dbg-box{display:none;margin-top:10px;padding:8px 10px;
+      background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);
+      border-radius:8px;color:#4f627a;font-size:.69rem;line-height:1.6;
+      word-break:break-all}
+  </style>
+</head>
+<body>
+<div class="card">
+  <div class="logo-wrap">
+    <div class="logo-box">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <rect x="2" y="6" width="20" height="13" rx="2.5" stroke="#00d4b1" stroke-width="1.7"/>
+        <rect x="5" y="10" width="2" height="2" rx=".5" fill="#00d4b1"/>
+        <rect x="9" y="10" width="2" height="2" rx=".5" fill="#00d4b1"/>
+        <rect x="13" y="10" width="2" height="2" rx=".5" fill="#00d4b1"/>
+      </svg>
+    </div>
+    <h1>Xvitypoo Admin</h1>
+    <p class="sub">Sign in with your admin credentials</p>
+  </div>
+
+  <div class="grp">
+    <label for="inp-email">Email Address</label>
+    <div class="inp-wrap">
+      <input type="email" id="inp-email"
+        placeholder="admin@example.com"
+        autocomplete="email"
+        onkeydown="if(event.key==='Enter')doLogin()">
+    </div>
+  </div>
+
+  <div class="grp">
+    <label for="inp-pass">Password</label>
+    <div class="inp-wrap">
+      <input type="password" id="inp-pass"
+        placeholder="••••••••"
+        autocomplete="current-password"
+        onkeydown="if(event.key==='Enter')doLogin()">
+      <button class="eye-btn" type="button" onclick="togglePass()" id="eye-btn"
+        title="Show/hide password">
+        <svg id="eye-open" width="16" height="16" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2">
+          <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+          <circle cx="12" cy="12" r="3"/>
+        </svg>
+        <svg id="eye-closed" width="16" height="16" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" style="display:none">
+          <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94"/>
+          <path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19"/>
+          <line x1="1" y1="1" x2="23" y2="23"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <button class="login-btn" id="login-btn" onclick="doLogin()">Sign In</button>
+  <div class="err-box" id="err-box"></div>
+  <div class="dbg-box" id="dbg-box"></div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+<script src="../firebase/config.js"></script>
+<script>
+'use strict';
+
+/* Init Firebase */
+if (!firebase.apps.length) firebase.initializeApp(FIREBASE_CONFIG);
+var _auth = firebase.auth();
+var _db   = firebase.firestore();
+
+/* ── IMPORTANT: Sign out any existing session on page load
+   Admin panel always requires fresh login ── */
+_auth.signOut();
+
+/* Toggle password visibility */
+function togglePass() {
+  var inp = document.getElementById('inp-pass');
+  var open   = document.getElementById('eye-open');
+  var closed = document.getElementById('eye-closed');
+  if (inp.type === 'password') {
+    inp.type = 'text';
+    open.style.display   = 'none';
+    closed.style.display = 'block';
+  } else {
+    inp.type = 'password';
+    open.style.display   = 'block';
+    closed.style.display = 'none';
+  }
+  inp.focus();
+}
+
+/* ── Main login ── */
+async function doLogin() {
+  var email = (document.getElementById('inp-email').value || '').trim();
+  var pass  = document.getElementById('inp-pass').value || '';
+  var btn   = document.getElementById('login-btn');
+
+  _hideErr();
+  _hideDbg();
+
+  if (!email) { _showErr('Email address লিখুন।'); return; }
+  if (!pass)  { _showErr('Password লিখুন।'); return; }
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    _showErr('Valid email format লিখুন।'); return;
+  }
+
+  btn.textContent = 'Signing in…';
+  btn.disabled    = true;
+
+  try {
+    /* Step 1: Firebase email/password auth */
+    var cred = await _auth.signInWithEmailAndPassword(email, pass);
+    _showDbg('✓ Firebase auth OK\nUID: ' + cred.user.uid);
+
+    /* Step 2: Verify admin role in Firestore */
+    var isAdm = await _checkAdmin(cred.user.uid);
+
+    if (isAdm) {
+      _showDbg('✓ Admin verified — redirecting…');
+      window.location.replace('dashboard.html');
+    } else {
+      /* Not admin — sign out and show UID for setup */
+      await _auth.signOut();
+      _showErr(
+        '❌ এই account এ admin access নেই।\n\n' +
+        'Firestore → admin_meta → config → adminUids array তে নিচের UID যোগ করো:\n' +
+        cred.user.uid
+      );
+    }
+
+  } catch(e) {
+    var msgs = {
+      'auth/wrong-password':         '❌ Password ভুল।',
+      'auth/invalid-credential':     '❌ Email বা Password ভুল।',
+      'auth/user-not-found':         '❌ এই email এ কোনো account নেই।\nFirebase Auth এ আগে user তৈরি করো।',
+      'auth/invalid-email':          '❌ Email format ঠিক নেই।',
+      'auth/too-many-requests':      '❌ অনেকবার চেষ্টা হয়েছে। কিছুক্ষণ পরে try করো।',
+      'auth/user-disabled':          '❌ এই account disabled করা আছে।',
+      'auth/network-request-failed': '❌ Internet connection সমস্যা।',
+    };
+    _showErr(msgs[e.code] || '❌ Error: ' + e.message);
+    _showDbg('Firebase code: ' + e.code);
+  }
+
+  btn.textContent = 'Sign In';
+  btn.disabled    = false;
+}
+
+/* Check Firestore admin_meta/config */
+async function _checkAdmin(uid) {
+  try {
+    var snap = await _db.collection('admin_meta').doc('config').get();
+    if (!snap.exists) {
+      _showDbg('admin_meta/config নেই। Firestore এ তৈরি করো।');
+      return false;
+    }
+    var d = snap.data();
+    if (!Array.isArray(d.adminUids)) {
+      _showDbg('adminUids field array না।');
+      return false;
+    }
+    return d.adminUids.includes(uid);
+  } catch(e) {
+    if (e.code === 'permission-denied') {
+      _showDbg(
+        'permission-denied: Firestore Rules এ admin_meta এ\n' +
+        '"allow read: if request.auth != null;" যোগ করো।'
+      );
+    } else {
+      _showDbg('Firestore error: ' + e.code + ' — ' + e.message);
+    }
+    return false;
+  }
+}
+
+function _showErr(msg) {
+  var e = document.getElementById('err-box');
+  e.textContent = msg; e.classList.add('show');
+}
+function _hideErr() {
+  document.getElementById('err-box').classList.remove('show');
+}
+function _showDbg(msg) {
+  var d = document.getElementById('dbg-box');
+  d.style.display = 'block';
+  d.textContent = '🔍 ' + msg;
+}
+function _hideDbg() {
+  var d = document.getElementById('dbg-box');
+  d.style.display = 'none';
+  d.textContent = '';
+}
+</script>
+</body>
+</html>

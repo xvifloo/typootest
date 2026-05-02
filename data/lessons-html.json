@@ -1,0 +1,242 @@
+[
+  {
+    "id": 401, "title": "Document Structure", "desc": "Learn the HTML skeleton every page needs", "diff": "beginner", "lang": "html",
+    "parts": [
+      { "part": 1,  "title": "DOCTYPE declaration",   "text": "<!DOCTYPE html>" },
+      { "part": 2,  "title": "html element",          "text": "<html>\n\n</html>" },
+      { "part": 3,  "title": "head element",          "text": "<head>\n\n</head>" },
+      { "part": 4,  "title": "body element",          "text": "<body>\n\n</body>" },
+      { "part": 5,  "title": "head + body",           "text": "<head>\n</head>\n<body>\n</body>" },
+      { "part": 6,  "title": "HTML skeleton",         "text": "<!DOCTYPE html>\n<html>\n  <head>\n  </head>\n  <body>\n  </body>\n</html>" },
+      { "part": 7,  "title": "With lang attribute",   "text": "<!DOCTYPE html>\n<html lang='en'>\n  <head>\n  </head>\n  <body>\n  </body>\n</html>" },
+      { "part": 8,  "title": "With charset meta",     "text": "<!DOCTYPE html>\n<html lang='en'>\n  <head>\n    <meta charset='UTF-8'>\n  </head>\n  <body>\n  </body>\n</html>" },
+      { "part": 9,  "title": "With title tag",        "text": "<!DOCTYPE html>\n<html lang='en'>\n  <head>\n    <meta charset='UTF-8'>\n    <title>My Page</title>\n  </head>\n  <body>\n  </body>\n</html>" },
+      { "part": 10, "title": "Complete structure",    "text": "<!DOCTYPE html>\n<html lang='en'>\n  <head>\n    <meta charset='UTF-8'>\n    <meta name='viewport' content='width=device-width'>\n    <title>My Page</title>\n  </head>\n  <body>\n    <h1>Hello World</h1>\n  </body>\n</html>" }
+    ]
+  },
+  {
+    "id": 402, "title": "Headings h1–h6", "desc": "Master all six heading levels in HTML", "diff": "beginner", "lang": "html",
+    "parts": [
+      { "part": 1,  "title": "h1 heading",            "text": "<h1>Main Heading</h1>" },
+      { "part": 2,  "title": "h2 heading",            "text": "<h2>Section Heading</h2>" },
+      { "part": 3,  "title": "h3 heading",            "text": "<h3>Sub Section</h3>" },
+      { "part": 4,  "title": "h4 h5 h6",             "text": "<h4>Minor Heading</h4>\n<h5>Small Heading</h5>\n<h6>Tiny Heading</h6>" },
+      { "part": 5,  "title": "h1 and h2 pair",       "text": "<h1>Welcome to My Site</h1>\n<h2>About This Page</h2>" },
+      { "part": 6,  "title": "Three levels",         "text": "<h1>Website Title</h1>\n<h2>Blog Posts</h2>\n<h3>Post One</h3>" },
+      { "part": 7,  "title": "All six headings",     "text": "<h1>Heading 1</h1>\n<h2>Heading 2</h2>\n<h3>Heading 3</h3>\n<h4>Heading 4</h4>\n<h5>Heading 5</h5>\n<h6>Heading 6</h6>" },
+      { "part": 8,  "title": "Headings with class",  "text": "<h1 class='page-title'>Welcome</h1>\n<h2 class='section-title'>Features</h2>\n<h3 class='sub-title'>Details</h3>" },
+      { "part": 9,  "title": "Headings with id",     "text": "<h1 id='top'>My Website</h1>\n<h2 id='about'>About Us</h2>\n<h2 id='contact'>Contact</h2>" },
+      { "part": 10, "title": "Headings in section",  "text": "<section>\n  <h1>Page Title</h1>\n  <h2>Section One</h2>\n  <h3>Topic A</h3>\n  <h3>Topic B</h3>\n  <h2>Section Two</h2>\n</section>" }
+    ]
+  },
+  {
+    "id": 403, "title": "Paragraphs & Text", "desc": "Type p, strong, em, br, span and more", "diff": "beginner", "lang": "html",
+    "parts": [
+      { "part": 1,  "title": "Single paragraph",     "text": "<p>This is a paragraph.</p>" },
+      { "part": 2,  "title": "Two paragraphs",       "text": "<p>First paragraph here.</p>\n<p>Second paragraph here.</p>" },
+      { "part": 3,  "title": "Bold text",            "text": "<p>This is <strong>bold text</strong> here.</p>" },
+      { "part": 4,  "title": "Italic text",          "text": "<p>This is <em>italic text</em> here.</p>" },
+      { "part": 5,  "title": "Bold and italic",      "text": "<p>Use <strong>bold</strong> and <em>italic</em> text.</p>" },
+      { "part": 6,  "title": "Line break",           "text": "<p>First line.<br>\nSecond line.<br>\nThird line.</p>" },
+      { "part": 7,  "title": "Span element",         "text": "<p>Click <span class='link'>here</span> to go.</p>" },
+      { "part": 8,  "title": "Blockquote",           "text": "<blockquote>\n  <p>To be or not to be.</p>\n</blockquote>" },
+      { "part": 9,  "title": "Inline code",          "text": "<p>Use the <code>console.log()</code> method.</p>" },
+      { "part": 10, "title": "Full text block",      "text": "<article>\n  <h2>My Article</h2>\n  <p>This is <strong>important</strong> text.</p>\n  <p>And this is <em>emphasized</em> text.</p>\n  <blockquote>\n    <p>A great quote here.</p>\n  </blockquote>\n</article>" }
+    ]
+  },
+  {
+    "id": 404, "title": "Links & Anchors", "desc": "Create hyperlinks with the a href element", "diff": "beginner", "lang": "html",
+    "parts": [
+      { "part": 1,  "title": "Basic link",           "text": "<a href='#'>Click here</a>" },
+      { "part": 2,  "title": "Link with URL",        "text": "<a href='https://example.com'>Visit Site</a>" },
+      { "part": 3,  "title": "Open in new tab",      "text": "<a href='https://example.com' target='_blank'>Open</a>" },
+      { "part": 4,  "title": "Email link",           "text": "<a href='mailto:info@site.com'>Email Us</a>" },
+      { "part": 5,  "title": "Phone link",           "text": "<a href='tel:+1234567890'>Call Us</a>" },
+      { "part": 6,  "title": "Anchor link",          "text": "<a href='#section'>Go to Section</a>\n<h2 id='section'>Section Title</h2>" },
+      { "part": 7,  "title": "Link with class",      "text": "<a href='/home' class='nav-link'>Home</a>\n<a href='/about' class='nav-link'>About</a>" },
+      { "part": 8,  "title": "Nav with links",       "text": "<nav>\n  <a href='/home'>Home</a>\n  <a href='/about'>About</a>\n  <a href='/contact'>Contact</a>\n</nav>" },
+      { "part": 9,  "title": "Download link",        "text": "<a href='/file.pdf' download='report'>Download PDF</a>" },
+      { "part": 10, "title": "Full navigation",      "text": "<header>\n  <nav class='main-nav'>\n    <a href='/' class='logo'>Brand</a>\n    <a href='/about'>About</a>\n    <a href='/blog'>Blog</a>\n    <a href='/contact'>Contact</a>\n  </nav>\n</header>" }
+    ]
+  },
+  {
+    "id": 405, "title": "Images", "desc": "Add images with img, alt, and figure tags", "diff": "easy", "lang": "html",
+    "parts": [
+      { "part": 1,  "title": "Basic image",          "text": "<img src='photo.jpg'>" },
+      { "part": 2,  "title": "With alt text",        "text": "<img src='photo.jpg' alt='A photo'>" },
+      { "part": 3,  "title": "With dimensions",      "text": "<img src='photo.jpg' alt='Photo' width='400' height='300'>" },
+      { "part": 4,  "title": "With class",           "text": "<img src='logo.png' alt='Logo' class='logo-img'>" },
+      { "part": 5,  "title": "Figure element",       "text": "<figure>\n  <img src='photo.jpg' alt='Photo'>\n  <figcaption>A nice photo</figcaption>\n</figure>" },
+      { "part": 6,  "title": "Responsive image",     "text": "<img src='photo.jpg' alt='Photo' style='max-width:100%;'>" },
+      { "part": 7,  "title": "Image as link",        "text": "<a href='/page'>\n  <img src='thumb.jpg' alt='Thumbnail'>\n</a>" },
+      { "part": 8,  "title": "Lazy loading",         "text": "<img src='photo.jpg' alt='Photo' loading='lazy'>" },
+      { "part": 9,  "title": "Image with title",     "text": "<img src='photo.jpg' alt='Sunset' title='Beautiful sunset'>" },
+      { "part": 10, "title": "Image gallery",        "text": "<div class='gallery'>\n  <figure>\n    <img src='img1.jpg' alt='Image 1' loading='lazy'>\n    <figcaption>First Image</figcaption>\n  </figure>\n  <figure>\n    <img src='img2.jpg' alt='Image 2' loading='lazy'>\n    <figcaption>Second Image</figcaption>\n  </figure>\n</div>" }
+    ]
+  },
+  {
+    "id": 406, "title": "Lists ul & ol", "desc": "Build ordered and unordered lists", "diff": "easy", "lang": "html",
+    "parts": [
+      { "part": 1,  "title": "Simple ul",            "text": "<ul>\n  <li>Item One</li>\n  <li>Item Two</li>\n</ul>" },
+      { "part": 2,  "title": "Three item ul",        "text": "<ul>\n  <li>Red</li>\n  <li>Green</li>\n  <li>Blue</li>\n</ul>" },
+      { "part": 3,  "title": "Ordered list",         "text": "<ol>\n  <li>First step</li>\n  <li>Second step</li>\n  <li>Third step</li>\n</ol>" },
+      { "part": 4,  "title": "List with class",      "text": "<ul class='nav-list'>\n  <li class='nav-item'>Home</li>\n  <li class='nav-item'>About</li>\n  <li class='nav-item'>Contact</li>\n</ul>" },
+      { "part": 5,  "title": "Nested list",          "text": "<ul>\n  <li>Fruits\n    <ul>\n      <li>Apple</li>\n      <li>Banana</li>\n    </ul>\n  </li>\n  <li>Veggies</li>\n</ul>" },
+      { "part": 6,  "title": "Ordered nested",       "text": "<ol>\n  <li>Setup\n    <ol>\n      <li>Install Node</li>\n      <li>Run npm install</li>\n    </ol>\n  </li>\n  <li>Build</li>\n</ol>" },
+      { "part": 7,  "title": "Nav ul links",         "text": "<nav>\n  <ul>\n    <li><a href='/'>Home</a></li>\n    <li><a href='/about'>About</a></li>\n    <li><a href='/blog'>Blog</a></li>\n  </ul>\n</nav>" },
+      { "part": 8,  "title": "Description list",     "text": "<dl>\n  <dt>HTML</dt>\n  <dd>Markup language</dd>\n  <dt>CSS</dt>\n  <dd>Style language</dd>\n</dl>" },
+      { "part": 9,  "title": "Checklist",            "text": "<ul class='checklist'>\n  <li class='done'>Task one</li>\n  <li class='done'>Task two</li>\n  <li>Task three</li>\n</ul>" },
+      { "part": 10, "title": "Full list section",    "text": "<section>\n  <h2>Features</h2>\n  <ul class='feature-list'>\n    <li>Fast loading</li>\n    <li>Mobile friendly</li>\n    <li>SEO optimized</li>\n    <li>Accessible</li>\n  </ul>\n</section>" }
+    ]
+  },
+  {
+    "id": 407, "title": "Tables", "desc": "Build data tables with tr, th, and td", "diff": "easy", "lang": "html",
+    "parts": [
+      { "part": 1,  "title": "Basic table row",      "text": "<table>\n  <tr>\n    <td>Cell 1</td>\n    <td>Cell 2</td>\n  </tr>\n</table>" },
+      { "part": 2,  "title": "Table header",         "text": "<table>\n  <tr>\n    <th>Name</th>\n    <th>Age</th>\n  </tr>\n</table>" },
+      { "part": 3,  "title": "Two rows",             "text": "<table>\n  <tr>\n    <th>Name</th>\n    <th>Score</th>\n  </tr>\n  <tr>\n    <td>Alice</td>\n    <td>95</td>\n  </tr>\n</table>" },
+      { "part": 4,  "title": "thead and tbody",      "text": "<table>\n  <thead>\n    <tr>\n      <th>Item</th>\n      <th>Price</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Book</td>\n      <td>$12</td>\n    </tr>\n  </tbody>\n</table>" },
+      { "part": 5,  "title": "With caption",         "text": "<table>\n  <caption>Student Scores</caption>\n  <tr>\n    <th>Name</th>\n    <th>Score</th>\n  </tr>\n  <tr>\n    <td>Bob</td>\n    <td>88</td>\n  </tr>\n</table>" },
+      { "part": 6,  "title": "With colspan",         "text": "<table>\n  <tr>\n    <th colspan='2'>Full Name</th>\n    <th>Age</th>\n  </tr>\n  <tr>\n    <td>John</td>\n    <td>Doe</td>\n    <td>30</td>\n  </tr>\n</table>" },
+      { "part": 7,  "title": "With classes",         "text": "<table class='data-table'>\n  <thead>\n    <tr class='header-row'>\n      <th>ID</th>\n      <th>Name</th>\n      <th>Email</th>\n    </tr>\n  </thead>\n  <tbody>\n  </tbody>\n</table>" },
+      { "part": 8,  "title": "tfoot element",        "text": "<table>\n  <thead>\n    <tr><th>Item</th><th>Cost</th></tr>\n  </thead>\n  <tbody>\n    <tr><td>Apple</td><td>$1</td></tr>\n  </tbody>\n  <tfoot>\n    <tr><td>Total</td><td>$1</td></tr>\n  </tfoot>\n</table>" },
+      { "part": 9,  "title": "Responsive table",     "text": "<div class='table-wrap'>\n  <table class='table'>\n    <thead>\n      <tr>\n        <th>Name</th>\n        <th>Role</th>\n        <th>Date</th>\n      </tr>\n    </thead>\n    <tbody></tbody>\n  </table>\n</div>" },
+      { "part": 10, "title": "Full data table",      "text": "<table class='data-table'>\n  <caption>User List</caption>\n  <thead>\n    <tr>\n      <th>ID</th>\n      <th>Name</th>\n      <th>Email</th>\n      <th>Role</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>1</td>\n      <td>Alice</td>\n      <td>alice@mail.com</td>\n      <td>Admin</td>\n    </tr>\n  </tbody>\n</table>" }
+    ]
+  },
+  {
+    "id": 408, "title": "Forms & Inputs", "desc": "Build forms with input, label, and button", "diff": "easy", "lang": "html",
+    "parts": [
+      { "part": 1,  "title": "Form element",         "text": "<form>\n</form>" },
+      { "part": 2,  "title": "Text input",           "text": "<form>\n  <input type='text'>\n</form>" },
+      { "part": 3,  "title": "Input with label",     "text": "<label for='name'>Name:</label>\n<input type='text' id='name' name='name'>" },
+      { "part": 4,  "title": "Submit button",        "text": "<form>\n  <input type='text' name='q'>\n  <button type='submit'>Submit</button>\n</form>" },
+      { "part": 5,  "title": "Email and password",   "text": "<form>\n  <input type='email' placeholder='Email'>\n  <input type='password' placeholder='Password'>\n  <button type='submit'>Login</button>\n</form>" },
+      { "part": 6,  "title": "With placeholders",    "text": "<form class='login-form'>\n  <label for='email'>Email</label>\n  <input type='email' id='email' placeholder='you@email.com'>\n  <label for='pass'>Password</label>\n  <input type='password' id='pass' placeholder='Password'>\n</form>" },
+      { "part": 7,  "title": "Radio buttons",        "text": "<fieldset>\n  <legend>Gender</legend>\n  <label><input type='radio' name='g' value='m'> Male</label>\n  <label><input type='radio' name='g' value='f'> Female</label>\n</fieldset>" },
+      { "part": 8,  "title": "Checkboxes",           "text": "<fieldset>\n  <legend>Skills</legend>\n  <label><input type='checkbox' name='html'> HTML</label>\n  <label><input type='checkbox' name='css'> CSS</label>\n  <label><input type='checkbox' name='js'> JS</label>\n</fieldset>" },
+      { "part": 9,  "title": "Select dropdown",      "text": "<label for='country'>Country</label>\n<select id='country' name='country'>\n  <option value=''>Select...</option>\n  <option value='bd'>Bangladesh</option>\n  <option value='us'>USA</option>\n</select>" },
+      { "part": 10, "title": "Full contact form",    "text": "<form class='contact-form' method='post'>\n  <div class='form-group'>\n    <label for='name'>Name</label>\n    <input type='text' id='name' name='name' required>\n  </div>\n  <div class='form-group'>\n    <label for='email'>Email</label>\n    <input type='email' id='email' name='email' required>\n  </div>\n  <div class='form-group'>\n    <label for='msg'>Message</label>\n    <textarea id='msg' name='msg' rows='4'></textarea>\n  </div>\n  <button type='submit'>Send</button>\n</form>" }
+    ]
+  },
+  {
+    "id": 409, "title": "Divs & Spans", "desc": "Use div and span for layout and styling", "diff": "easy", "lang": "html",
+    "parts": [
+      { "part": 1,  "title": "Simple div",           "text": "<div>\n  Content here\n</div>" },
+      { "part": 2,  "title": "Div with class",       "text": "<div class='container'>\n  Content here\n</div>" },
+      { "part": 3,  "title": "Div with id",          "text": "<div id='app'>\n  App content\n</div>" },
+      { "part": 4,  "title": "Nested divs",          "text": "<div class='card'>\n  <div class='card-header'>Title</div>\n  <div class='card-body'>Body</div>\n</div>" },
+      { "part": 5,  "title": "Span inline",          "text": "<p>Click <span class='highlight'>here</span> now.</p>" },
+      { "part": 6,  "title": "Span with style",      "text": "<p>Price: <span class='price'>$99</span> only.</p>" },
+      { "part": 7,  "title": "Layout divs",          "text": "<div class='layout'>\n  <div class='sidebar'>Sidebar</div>\n  <div class='main'>Main</div>\n</div>" },
+      { "part": 8,  "title": "Grid container",       "text": "<div class='grid'>\n  <div class='col'>One</div>\n  <div class='col'>Two</div>\n  <div class='col'>Three</div>\n</div>" },
+      { "part": 9,  "title": "Card component",       "text": "<div class='card'>\n  <img src='thumb.jpg' alt='Card'>\n  <div class='card-body'>\n    <h3 class='card-title'>Title</h3>\n    <p class='card-text'>Description.</p>\n    <a href='#' class='btn'>Read More</a>\n  </div>\n</div>" },
+      { "part": 10, "title": "Full page layout",     "text": "<div id='app'>\n  <div class='header'></div>\n  <div class='layout'>\n    <div class='nav'></div>\n    <div class='content'>\n      <div class='section'></div>\n    </div>\n    <div class='aside'></div>\n  </div>\n  <div class='footer'></div>\n</div>" }
+    ]
+  },
+  {
+    "id": 410, "title": "Semantic HTML5", "desc": "Use header, nav, main, section, article, footer", "diff": "medium", "lang": "html",
+    "parts": [
+      { "part": 1,  "title": "header element",       "text": "<header>\n  <h1>Site Name</h1>\n</header>" },
+      { "part": 2,  "title": "nav element",          "text": "<nav>\n  <a href='/'>Home</a>\n  <a href='/about'>About</a>\n</nav>" },
+      { "part": 3,  "title": "main element",         "text": "<main>\n  <h1>Welcome</h1>\n  <p>Main content here.</p>\n</main>" },
+      { "part": 4,  "title": "section element",      "text": "<section>\n  <h2>Features</h2>\n  <p>Feature details here.</p>\n</section>" },
+      { "part": 5,  "title": "article element",      "text": "<article>\n  <h2>Blog Post Title</h2>\n  <p>Post content here.</p>\n</article>" },
+      { "part": 6,  "title": "aside element",        "text": "<aside>\n  <h3>Related Links</h3>\n  <ul>\n    <li><a href='#'>Link One</a></li>\n    <li><a href='#'>Link Two</a></li>\n  </ul>\n</aside>" },
+      { "part": 7,  "title": "footer element",       "text": "<footer>\n  <p>&copy; 2026 My Site</p>\n  <nav>\n    <a href='/privacy'>Privacy</a>\n    <a href='/terms'>Terms</a>\n  </nav>\n</footer>" },
+      { "part": 8,  "title": "header + nav",         "text": "<header>\n  <a href='/' class='logo'>Brand</a>\n  <nav>\n    <a href='/home'>Home</a>\n    <a href='/about'>About</a>\n    <a href='/blog'>Blog</a>\n  </nav>\n</header>" },
+      { "part": 9,  "title": "main + section",       "text": "<main>\n  <section class='hero'>\n    <h1>Welcome</h1>\n    <p>Best site ever.</p>\n  </section>\n  <section class='features'>\n    <h2>Features</h2>\n  </section>\n</main>" },
+      { "part": 10, "title": "Full semantic page",   "text": "<body>\n  <header>\n    <nav>\n      <a href='/'>Home</a>\n      <a href='/about'>About</a>\n    </nav>\n  </header>\n  <main>\n    <section>\n      <h1>Page Title</h1>\n      <article>\n        <p>Content here.</p>\n      </article>\n    </section>\n    <aside>\n      <p>Sidebar</p>\n    </aside>\n  </main>\n  <footer>\n    <p>&copy; 2026</p>\n  </footer>\n</body>" }
+    ]
+  },
+  {
+    "id": 411, "title": "Classes & IDs", "desc": "Apply class and id attributes for CSS and JS", "diff": "medium", "lang": "html",
+    "parts": [
+      { "part": 1,  "title": "Single class",         "text": "<div class='box'></div>" },
+      { "part": 2,  "title": "Multiple classes",     "text": "<div class='card card-primary active'></div>" },
+      { "part": 3,  "title": "ID attribute",         "text": "<div id='main-content'></div>" },
+      { "part": 4,  "title": "Class and ID",         "text": "<div id='hero' class='section hero-section'>\n  <h1 class='hero-title'>Title</h1>\n</div>" },
+      { "part": 5,  "title": "BEM naming",           "text": "<div class='card'>\n  <div class='card__header'>Header</div>\n  <div class='card__body'>Body</div>\n  <div class='card__footer'>Footer</div>\n</div>" },
+      { "part": 6,  "title": "Button classes",       "text": "<button class='btn btn-primary'>Submit</button>\n<button class='btn btn-secondary'>Cancel</button>\n<button class='btn btn-danger'>Delete</button>" },
+      { "part": 7,  "title": "State classes",        "text": "<li class='item active'>Active Item</li>\n<li class='item'>Normal Item</li>\n<li class='item disabled'>Disabled</li>" },
+      { "part": 8,  "title": "Utility classes",      "text": "<div class='flex items-center justify-between p-4'>\n  <h2 class='text-xl font-bold'>Title</h2>\n  <button class='ml-auto'>Click</button>\n</div>" },
+      { "part": 9,  "title": "Data attributes",      "text": "<div id='app' class='wrapper' data-theme='dark'>\n  <button class='btn' data-action='submit' data-id='1'>Submit</button>\n</div>" },
+      { "part": 10, "title": "Full component",       "text": "<section id='features' class='section section--alt'>\n  <div class='container'>\n    <h2 class='section__title'>Features</h2>\n    <div class='grid grid--3'>\n      <div class='feature-card' data-id='1'>\n        <h3 class='feature-card__title'>Fast</h3>\n        <p class='feature-card__text'>Very fast.</p>\n      </div>\n    </div>\n  </div>\n</section>" }
+    ]
+  },
+  {
+    "id": 412, "title": "HTML Attributes", "desc": "Use title, lang, tabindex, aria, and data attrs", "diff": "medium", "lang": "html",
+    "parts": [
+      { "part": 1,  "title": "title attribute",      "text": "<abbr title='HyperText Markup Language'>HTML</abbr>" },
+      { "part": 2,  "title": "lang attribute",       "text": "<html lang='en'>\n<p lang='bn'>বাংলা পাঠ্য</p>\n<p lang='fr'>Bonjour</p>" },
+      { "part": 3,  "title": "tabindex",             "text": "<a href='/' tabindex='1'>Home</a>\n<a href='/about' tabindex='2'>About</a>\n<button tabindex='3'>Click</button>" },
+      { "part": 4,  "title": "aria-label",           "text": "<button aria-label='Close menu'>\n  <span class='icon'>X</span>\n</button>" },
+      { "part": 5,  "title": "aria-hidden",          "text": "<button class='btn'>\n  <svg aria-hidden='true'></svg>\n  <span>Submit</span>\n</button>" },
+      { "part": 6,  "title": "role attribute",       "text": "<div role='navigation'>\n  <div role='list'>\n    <div role='listitem'>Item One</div>\n    <div role='listitem'>Item Two</div>\n  </div>\n</div>" },
+      { "part": 7,  "title": "data-* attributes",    "text": "<div data-user-id='42'\n     data-role='admin'\n     data-active='true'>\n  User info\n</div>" },
+      { "part": 8,  "title": "Input attributes",     "text": "<input type='text'\n       id='search'\n       name='q'\n       placeholder='Search...'\n       autocomplete='off'\n       required\n       maxlength='100'>" },
+      { "part": 9,  "title": "Link attributes",      "text": "<a href='https://site.com'\n   target='_blank'\n   rel='noopener noreferrer'\n   title='Visit site'\n   aria-label='External site'>\n  Open Site\n</a>" },
+      { "part": 10, "title": "Full attributes set",  "text": "<section id='hero'\n         class='section hero'\n         role='banner'\n         data-section='hero'\n         aria-label='Hero section'>\n  <h1 class='hero__title'\n      tabindex='0'>\n    Welcome\n  </h1>\n</section>" }
+    ]
+  },
+  {
+    "id": 413, "title": "Meta & Head Tags", "desc": "Write complete head sections with meta tags", "diff": "medium", "lang": "html",
+    "parts": [
+      { "part": 1,  "title": "charset meta",         "text": "<meta charset='UTF-8'>" },
+      { "part": 2,  "title": "viewport meta",        "text": "<meta name='viewport' content='width=device-width, initial-scale=1.0'>" },
+      { "part": 3,  "title": "description meta",     "text": "<meta name='description' content='A great website for learning HTML.'>" },
+      { "part": 4,  "title": "author meta",          "text": "<meta name='author' content='John Doe'>\n<meta name='keywords' content='HTML, CSS, web'>" },
+      { "part": 5,  "title": "Open Graph tags",      "text": "<meta property='og:title' content='My Page'>\n<meta property='og:type' content='website'>\n<meta property='og:url' content='https://site.com'>" },
+      { "part": 6,  "title": "Twitter card",         "text": "<meta name='twitter:card' content='summary'>\n<meta name='twitter:title' content='My Page'>\n<meta name='twitter:description' content='A great page.'>" },
+      { "part": 7,  "title": "CSS link tag",         "text": "<link rel='stylesheet' href='style.css'>\n<link rel='stylesheet' href='mobile.css' media='(max-width: 768px)'>" },
+      { "part": 8,  "title": "Favicon link",         "text": "<link rel='icon' type='image/png' href='favicon.png'>\n<link rel='apple-touch-icon' href='icon-180.png'>" },
+      { "part": 9,  "title": "Preload resource",     "text": "<link rel='preload' href='font.woff2' as='font' type='font/woff2' crossorigin>\n<link rel='preconnect' href='https://fonts.googleapis.com'>" },
+      { "part": 10, "title": "Full head section",    "text": "<head>\n  <meta charset='UTF-8'>\n  <meta name='viewport' content='width=device-width, initial-scale=1.0'>\n  <meta name='description' content='My website.'>\n  <title>My Website</title>\n  <link rel='icon' href='favicon.ico'>\n  <link rel='stylesheet' href='style.css'>\n  <meta property='og:title' content='My Website'>\n</head>" }
+    ]
+  },
+  {
+    "id": 414, "title": "Inline Styles & script", "desc": "Add style attributes and script tags to HTML", "diff": "medium", "lang": "html",
+    "parts": [
+      { "part": 1,  "title": "Inline color",         "text": "<p style='color: red;'>Red text</p>" },
+      { "part": 2,  "title": "Inline background",    "text": "<div style='background: #007bff; color: white; padding: 10px;'>\n  Blue box\n</div>" },
+      { "part": 3,  "title": "Inline flex",          "text": "<div style='display: flex; gap: 16px; align-items: center;'>\n  <span>Left</span>\n  <span>Right</span>\n</div>" },
+      { "part": 4,  "title": "Style tag",            "text": "<style>\n  body {\n    margin: 0;\n    font-family: sans-serif;\n  }\n</style>" },
+      { "part": 5,  "title": "Style with selector",  "text": "<style>\n  .card {\n    border: 1px solid #ddd;\n    border-radius: 8px;\n    padding: 16px;\n  }\n</style>" },
+      { "part": 6,  "title": "Inline hidden",        "text": "<div style='display: none;' id='modal'>\n  Modal content\n</div>" },
+      { "part": 7,  "title": "Script at bottom",     "text": "<body>\n  <h1>Hello</h1>\n  <script src='app.js'></script>\n</body>" },
+      { "part": 8,  "title": "Inline script",        "text": "<script>\n  document.addEventListener('DOMContentLoaded', function() {\n    console.log('Page loaded');\n  });\n</script>" },
+      { "part": 9,  "title": "Script with type",     "text": "<script type='module' src='main.js'></script>\n<script type='module'>\n  import { fn } from './utils.js';\n  fn();\n</script>" },
+      { "part": 10, "title": "Head with style+script","text": "<head>\n  <meta charset='UTF-8'>\n  <title>Page</title>\n  <style>\n    * { box-sizing: border-box; }\n    body { margin: 0; }\n  </style>\n</head>\n<body>\n  <div id='app'></div>\n  <script src='app.js'></script>\n</body>" }
+    ]
+  },
+  {
+    "id": 415, "title": "UI Components", "desc": "Build real-world HTML components", "diff": "hard", "lang": "html",
+    "parts": [
+      { "part": 1,  "title": "Button group",         "text": "<div class='btn-group'>\n  <button class='btn btn-primary'>Save</button>\n  <button class='btn btn-secondary'>Cancel</button>\n  <button class='btn btn-danger'>Delete</button>\n</div>" },
+      { "part": 2,  "title": "Alert box",            "text": "<div class='alert alert-success' role='alert'>\n  <strong>Success!</strong> Your data has been saved.\n  <button class='close' aria-label='Close'>&times;</button>\n</div>" },
+      { "part": 3,  "title": "Badge and tag",        "text": "<span class='badge badge-primary'>New</span>\n<span class='badge badge-success'>Active</span>\n<span class='tag'>HTML</span>\n<span class='tag'>CSS</span>" },
+      { "part": 4,  "title": "Breadcrumb nav",       "text": "<nav aria-label='breadcrumb'>\n  <ol class='breadcrumb'>\n    <li class='bc-item'><a href='/'>Home</a></li>\n    <li class='bc-item'><a href='/blog'>Blog</a></li>\n    <li class='bc-item active'>Post Title</li>\n  </ol>\n</nav>" },
+      { "part": 5,  "title": "Tabs component",       "text": "<div class='tabs'>\n  <div class='tab-list'>\n    <button class='tab active' data-tab='1'>Tab 1</button>\n    <button class='tab' data-tab='2'>Tab 2</button>\n    <button class='tab' data-tab='3'>Tab 3</button>\n  </div>\n  <div class='tab-content' id='tab-1'>Content 1</div>\n  <div class='tab-content hidden' id='tab-2'>Content 2</div>\n</div>" },
+      { "part": 6,  "title": "Dropdown menu",        "text": "<div class='dropdown'>\n  <button class='btn dropdown-toggle'>Menu</button>\n  <ul class='dropdown-menu'>\n    <li><a href='/profile'>Profile</a></li>\n    <li><a href='/settings'>Settings</a></li>\n    <li><hr class='divider'></li>\n    <li><a href='/logout'>Logout</a></li>\n  </ul>\n</div>" },
+      { "part": 7,  "title": "Modal dialog",         "text": "<div class='modal' id='myModal' role='dialog' aria-modal='true'>\n  <div class='modal-box'>\n    <div class='modal-header'>\n      <h3>Confirm Action</h3>\n      <button class='close'>&times;</button>\n    </div>\n    <div class='modal-body'>\n      <p>Are you sure?</p>\n    </div>\n    <div class='modal-footer'>\n      <button class='btn btn-primary'>Yes</button>\n      <button class='btn btn-secondary'>No</button>\n    </div>\n  </div>\n</div>" },
+      { "part": 8,  "title": "Search form",          "text": "<form class='search-form' role='search'>\n  <label for='search' class='sr-only'>Search</label>\n  <div class='input-group'>\n    <input type='search'\n           id='search'\n           class='form-input'\n           placeholder='Search...'\n           autocomplete='off'>\n    <button type='submit' class='btn btn-primary'>\n      Search\n    </button>\n  </div>\n</form>" },
+      { "part": 9,  "title": "Profile card",         "text": "<div class='profile-card'>\n  <img src='avatar.jpg' alt='User' class='avatar'>\n  <div class='profile-info'>\n    <h3 class='profile-name'>John Doe</h3>\n    <p class='profile-role'>Developer</p>\n    <div class='profile-stats'>\n      <span>Posts: <strong>42</strong></span>\n      <span>Likes: <strong>128</strong></span>\n    </div>\n  </div>\n  <a href='/profile' class='btn btn-sm'>View Profile</a>\n</div>" },
+      { "part": 10, "title": "Notification bell",    "text": "<div class='notify-wrap'>\n  <button class='btn-icon' aria-label='Notifications'>\n    <svg width='20' height='20' aria-hidden='true'>\n      <use href='#icon-bell'></use>\n    </svg>\n    <span class='badge badge-dot' aria-label='3 unread'>3</span>\n  </button>\n  <div class='notify-dropdown hidden'>\n    <h4 class='notify-title'>Notifications</h4>\n    <ul class='notify-list'>\n      <li class='notify-item unread'>New message</li>\n      <li class='notify-item'>Comment reply</li>\n    </ul>\n  </div>\n</div>" }
+    ]
+  },
+  {
+    "id": 416, "title": "Full HTML Pages", "desc": "Build complete HTML pages from scratch", "diff": "expert", "lang": "html",
+    "parts": [
+      { "part": 1,  "title": "Minimal HTML page",    "text": "<!DOCTYPE html>\n<html lang='en'>\n<head>\n  <meta charset='UTF-8'>\n  <title>Hello</title>\n</head>\n<body>\n  <h1>Hello World!</h1>\n</body>\n</html>" },
+      { "part": 2,  "title": "Landing page hero",    "text": "<!DOCTYPE html>\n<html lang='en'>\n<head>\n  <meta charset='UTF-8'>\n  <meta name='viewport' content='width=device-width'>\n  <title>Landing Page</title>\n  <link rel='stylesheet' href='style.css'>\n</head>\n<body>\n  <header>\n    <nav class='navbar'>\n      <a href='/' class='logo'>Brand</a>\n    </nav>\n  </header>\n  <main>\n    <section class='hero'>\n      <h1>Welcome to Our Site</h1>\n      <p>The best place on the web.</p>\n      <a href='/start' class='btn btn-primary'>Get Started</a>\n    </section>\n  </main>\n</body>\n</html>" },
+      { "part": 3,  "title": "Blog post page",       "text": "<!DOCTYPE html>\n<html lang='en'>\n<head>\n  <meta charset='UTF-8'>\n  <meta name='description' content='Blog post.'>\n  <title>Blog Post</title>\n</head>\n<body>\n  <header>\n    <nav><a href='/'>Home</a> / <a href='/blog'>Blog</a></nav>\n  </header>\n  <main>\n    <article>\n      <h1>Post Title</h1>\n      <time datetime='2026-01-15'>Jan 15, 2026</time>\n      <p>Article content here.</p>\n    </article>\n  </main>\n  <footer><p>&copy; 2026</p></footer>\n</body>\n</html>" },
+      { "part": 4,  "title": "Login page",           "text": "<!DOCTYPE html>\n<html lang='en'>\n<head>\n  <meta charset='UTF-8'>\n  <title>Login</title>\n</head>\n<body>\n  <main class='auth-wrap'>\n    <div class='auth-card'>\n      <h1>Sign In</h1>\n      <form method='post' action='/login'>\n        <label for='e'>Email</label>\n        <input type='email' id='e' name='email' required>\n        <label for='p'>Password</label>\n        <input type='password' id='p' name='pass' required>\n        <button type='submit'>Login</button>\n      </form>\n      <p>No account? <a href='/signup'>Sign up</a></p>\n    </div>\n  </main>\n</body>\n</html>" },
+      { "part": 5,  "title": "404 error page",       "text": "<!DOCTYPE html>\n<html lang='en'>\n<head>\n  <meta charset='UTF-8'>\n  <title>404 Not Found</title>\n</head>\n<body>\n  <main class='error-page'>\n    <h1 class='error-code'>404</h1>\n    <h2>Page Not Found</h2>\n    <p>The page you are looking for does not exist.</p>\n    <a href='/' class='btn btn-primary'>Go Home</a>\n  </main>\n</body>\n</html>" },
+      { "part": 6,  "title": "Product listing page", "text": "<!DOCTYPE html>\n<html lang='en'>\n<head>\n  <meta charset='UTF-8'>\n  <title>Products</title>\n  <link rel='stylesheet' href='style.css'>\n</head>\n<body>\n  <header class='site-header'>\n    <nav class='navbar'>\n      <a href='/'>Home</a>\n      <a href='/products' class='active'>Products</a>\n      <a href='/cart'>Cart (0)</a>\n    </nav>\n  </header>\n  <main>\n    <h1>All Products</h1>\n    <div class='product-grid'>\n      <div class='product-card'>\n        <img src='p1.jpg' alt='Product 1'>\n        <h3>Product One</h3>\n        <p class='price'>$29.99</p>\n        <button class='btn'>Add to Cart</button>\n      </div>\n    </div>\n  </main>\n</body>\n</html>" },
+      { "part": 7,  "title": "Dashboard page",       "text": "<!DOCTYPE html>\n<html lang='en'>\n<head>\n  <meta charset='UTF-8'>\n  <title>Dashboard</title>\n</head>\n<body class='dashboard'>\n  <aside class='sidebar'>\n    <nav>\n      <a href='/dash'>Overview</a>\n      <a href='/users'>Users</a>\n      <a href='/settings'>Settings</a>\n    </nav>\n  </aside>\n  <main class='dash-main'>\n    <header class='dash-header'>\n      <h1>Dashboard</h1>\n    </header>\n    <section class='stats-grid'>\n      <div class='stat-card'>\n        <span class='stat-num'>1,234</span>\n        <span class='stat-lbl'>Users</span>\n      </div>\n    </section>\n  </main>\n</body>\n</html>" },
+      { "part": 8,  "title": "Contact page",         "text": "<!DOCTYPE html>\n<html lang='en'>\n<head>\n  <meta charset='UTF-8'>\n  <meta name='viewport' content='width=device-width'>\n  <title>Contact Us</title>\n</head>\n<body>\n  <header><nav><a href='/'>Home</a></nav></header>\n  <main>\n    <section class='contact'>\n      <h1>Contact Us</h1>\n      <form class='contact-form' method='post'>\n        <input type='text' name='name' placeholder='Name' required>\n        <input type='email' name='email' placeholder='Email' required>\n        <textarea name='msg' placeholder='Message' rows='5'></textarea>\n        <button type='submit' class='btn'>Send</button>\n      </form>\n    </section>\n  </main>\n  <footer><p>&copy; 2026</p></footer>\n</body>\n</html>" },
+      { "part": 9,  "title": "Resume / CV page",     "text": "<!DOCTYPE html>\n<html lang='en'>\n<head>\n  <meta charset='UTF-8'>\n  <title>Resume - John Doe</title>\n</head>\n<body class='resume'>\n  <header class='resume-header'>\n    <h1>John Doe</h1>\n    <p>Web Developer</p>\n    <p><a href='mailto:john@mail.com'>john@mail.com</a></p>\n  </header>\n  <main>\n    <section>\n      <h2>Experience</h2>\n      <article>\n        <h3>Senior Dev</h3>\n        <p>Company Inc. 2022-2026</p>\n      </article>\n    </section>\n    <section>\n      <h2>Skills</h2>\n      <ul>\n        <li>HTML5</li>\n        <li>CSS3</li>\n        <li>JavaScript</li>\n      </ul>\n    </section>\n  </main>\n</body>\n</html>" },
+      { "part": 10, "title": "Grand Master Page",    "text": "<!DOCTYPE html>\n<html lang='en'>\n<head>\n  <meta charset='UTF-8'>\n  <meta name='viewport' content='width=device-width, initial-scale=1.0'>\n  <meta name='description' content='My website.'>\n  <title>My Website</title>\n  <link rel='icon' href='favicon.ico'>\n  <link rel='stylesheet' href='style.css'>\n</head>\n<body>\n  <header class='site-header'>\n    <nav class='navbar' aria-label='Main navigation'>\n      <a href='/' class='logo'>Brand</a>\n      <ul class='nav-list'>\n        <li><a href='/about'>About</a></li>\n        <li><a href='/blog'>Blog</a></li>\n        <li><a href='/contact'>Contact</a></li>\n      </ul>\n    </nav>\n  </header>\n  <main id='main-content'>\n    <section class='hero' aria-labelledby='hero-title'>\n      <h1 id='hero-title'>Welcome!</h1>\n      <p>The best website ever made.</p>\n      <a href='/start' class='btn btn-primary'>Get Started</a>\n    </section>\n  </main>\n  <footer class='site-footer'>\n    <p>&copy; 2026 My Brand. All rights reserved.</p>\n  </footer>\n  <script src='app.js'></script>\n</body>\n</html>" }
+    ]
+  }
+]

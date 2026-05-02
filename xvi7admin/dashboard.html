@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xvitypoo — Admin Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@700;800&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+
+<div class="sidebar-overlay" id="sidebar-overlay" onclick="closeSidebar()"></div>
+<div class="admin-wrap">
+
+  <!-- ========== SIDEBAR ========== -->
+  <aside class="sidebar" id="sidebar">
+
+    <div class="sb-logo">
+      <div class="sb-logo-box">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+          <rect x="2" y="6" width="20" height="13" rx="2.5" stroke="white" stroke-width="1.7"/>
+          <rect x="5" y="10" width="2" height="2" rx=".6" fill="white"/>
+          <rect x="9" y="10" width="2" height="2" rx=".6" fill="white"/>
+          <rect x="13" y="10" width="2" height="2" rx=".6" fill="white"/>
+          <rect x="5" y="14" width="8" height="2" rx="1" fill="white"/>
+        </svg>
+      </div>
+      <div>
+        <div class="sb-logo-text">Xvitypoo</div>
+        <div class="sb-admin-badge">Admin</div>
+      </div>
+    </div>
+
+    <nav class="sb-nav">
+      <div class="sb-section-label">Overview</div>
+      <button class="sb-item active" data-panel="overview" onclick="handleSidebarClick(this,event)">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/>
+          <rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
+        </svg>
+        Dashboard
+      </button>
+      <button class="sb-item" data-panel="visitors" onclick="handleSidebarClick(this,event)">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+          <circle cx="9" cy="7" r="4"/>
+          <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+          <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+        </svg>
+        Visitors
+      </button>
+      <button class="sb-item" data-panel="sessions" onclick="handleSidebarClick(this,event)">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+          <polyline points="17 6 23 6 23 12"/>
+        </svg>
+        Sessions
+      </button>
+      <button class="sb-item" data-panel="users" onclick="handleSidebarClick(this,event)">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+          <circle cx="9" cy="7" r="4"/>
+          <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+          <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+        </svg>
+        Registered Users
+      </button>
+      <button class="sb-item" data-panel="anonymous" onclick="handleSidebarClick(this,event)">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="8" r="4"/>
+          <path d="M20 21a8 8 0 1 0-16 0"/>
+        </svg>
+        Anonymous Visitors
+      </button>
+
+      <div class="sb-section-label" style="margin-top:12px">Reports</div>
+      <button class="sb-item" data-panel="weekly" onclick="handleSidebarClick(this,event)">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+          <line x1="16" y1="2" x2="16" y2="6"/>
+          <line x1="8" y1="2" x2="8" y2="6"/>
+          <line x1="3" y1="10" x2="21" y2="10"/>
+        </svg>
+        This Week
+      </button>
+      <button class="sb-item" data-panel="yearly" onclick="handleSidebarClick(this,event)">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21.21 15.89A10 10 0 1 1 8 2.83"/>
+          <path d="M22 12A10 10 0 0 0 12 2v10z"/>
+        </svg>
+        Yearly
+      </button>
+
+      <div class="sb-section-label" style="margin-top:12px">Site</div>
+      <button class="sb-item" data-panel="feedback" onclick="handleSidebarClick(this,event)">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+        </svg>
+        Feedback
+        <span id="feedback-badge" style="background:var(--wrong);color:#fff;border-radius:50px;font-size:.6rem;padding:1px 6px;margin-left:auto;display:none">0</span>
+      </button>
+      <a class="sb-item" href="../index.html" target="_blank">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+          <polyline points="15 3 21 3 21 9"/>
+          <line x1="10" y1="14" x2="21" y2="3"/>
+        </svg>
+        View Site
+      </a>
+    </nav>
+
+    <div class="sb-footer">
+      <div class="sb-user">
+        <div class="sb-avatar">A</div>
+        <div>
+          <div class="sb-uname">Admin</div>
+          <div class="sb-urole">Super Admin</div>
+        </div>
+      </div>
+      <button class="logout-btn" onclick="doLogout()">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
+          <polyline points="16 17 21 12 16 7"/>
+          <line x1="21" y1="12" x2="9" y2="12"/>
+        </svg>
+        Sign Out
+      </button>
+    </div>
+
+  </aside>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main class="admin-main" id="admin-main">
+
+    <!-- Top bar -->
+    <div class="admin-topbar">
+      <div>
+        <div class="admin-page-title" id="page-title">Dashboard</div>
+        <div class="admin-page-sub" id="page-sub">Overview of site activity</div>
+      </div>
+      <div class="topbar-right">
+        <span class="last-updated" id="last-updated">Loading…</span>
+        <button class="refresh-btn" onclick="loadDashboard()">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="1 4 1 10 7 10"/>
+            <path d="M3.51 15a9 9 0 1 0 .49-4.95"/>
+          </svg>
+          Refresh
+        </button>
+        <!-- Theme toggle -->
+        <button class="admin-theme-btn" onclick="toggleAdminTheme()" title="Toggle theme">
+          <svg id="admin-thm-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+          </svg>
+        </button>
+        <!-- Mobile hamburger -->
+        <button class="admin-hamburger" onclick="toggleAdminSidebar()" style="display:none">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- ── OVERVIEW PANEL ── -->
+    <div id="panel-overview">
+
+      <!-- Stat cards -->
+      <div class="stat-cards">
+        <div class="stat-card">
+          <div class="sc-label">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+            </svg>
+            Today's Visitors
+          </div>
+          <span class="sc-val" id="sc-today-visitors">--</span>
+          <span class="sc-sub">Unique page views today</span>
+        </div>
+        <div class="stat-card">
+          <div class="sc-label">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+            </svg>
+            Today's Sessions
+          </div>
+          <span class="sc-val g" id="sc-today-sessions">--</span>
+          <span class="sc-sub">Typing tests completed</span>
+        </div>
+        <div class="stat-card">
+          <div class="sc-label">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+            Avg Session Time
+          </div>
+          <span class="sc-val p" id="sc-today-time">--</span>
+          <span class="sc-sub">Minutes per visit today</span>
+        </div>
+        <div class="stat-card">
+          <div class="sc-label">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            </svg>
+            Avg WPM Today
+          </div>
+          <span class="sc-val y" id="sc-today-wpm">--</span>
+          <span class="sc-sub">Average across all users</span>
+        </div>
+      </div>
+
+      <!-- All-time stats -->
+      <div class="stat-cards" style="margin-bottom:20px">
+        <div class="stat-card">
+          <div class="sc-label">Total Visitors</div>
+          <span class="sc-val" id="sc-all-visitors">--</span>
+          <span class="sc-sub">All time</span>
+        </div>
+        <div class="stat-card">
+          <div class="sc-label">Total Sessions</div>
+          <span class="sc-val g" id="sc-all-sessions">--</span>
+          <span class="sc-sub">All time</span>
+        </div>
+        <div class="stat-card">
+          <div class="sc-label">Total Time Typed</div>
+          <span class="sc-val p" id="sc-all-time">--</span>
+          <span class="sc-sub">All time (hours)</span>
+        </div>
+        <div class="stat-card">
+          <div class="sc-label">This Week</div>
+          <span class="sc-val y" id="sc-week-visitors">--</span>
+          <span class="sc-sub">Visitors (7 days)</span>
+        </div>
+      </div>
+
+      <!-- Charts row -->
+      <div class="chart-grid">
+        <div class="chart-card">
+          <h3>
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2">
+              <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+            </svg>
+            Daily Visitors — Last 7 Days
+          </h3>
+          <div class="chart-container">
+            <canvas id="visitors-week-chart"></canvas>
+          </div>
+        </div>
+        <div class="chart-card">
+          <h3>
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2">
+              <path d="M21.21 15.89A10 10 0 1 1 8 2.83"/>
+              <path d="M22 12A10 10 0 0 0 12 2v10z"/>
+            </svg>
+            Language Usage
+          </h3>
+          <div class="chart-container">
+            <canvas id="lang-pie-chart"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <!-- Session duration chart -->
+      <div class="chart-card" style="margin-bottom:20px">
+        <h3>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+          Avg Session Duration — Last 7 Days (minutes)
+        </h3>
+        <div class="chart-container">
+          <canvas id="session-chart"></canvas>
+        </div>
+      </div>
+
+      <!-- Recent sessions table -->
+      <div class="table-card">
+        <h3>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2">
+            <line x1="8" y1="6" x2="21" y2="6"/>
+            <line x1="8" y1="12" x2="21" y2="12"/>
+            <line x1="8" y1="18" x2="21" y2="18"/>
+            <line x1="3" y1="6" x2="3.01" y2="6"/>
+            <line x1="3" y1="12" x2="3.01" y2="12"/>
+            <line x1="3" y1="18" x2="3.01" y2="18"/>
+          </svg>
+          Recent Typing Sessions
+        </h3>
+        <div id="sessions-table-wrap">
+          <div class="admin-loading">
+            <div class="spin"></div>
+            <span>Loading sessions…</span>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /panel-overview -->
+
+    <!-- ── VISITORS PANEL ── -->
+    <div id="panel-visitors" style="display:none">
+      <div class="chart-card" style="margin-bottom:20px">
+        <h3>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+          </svg>
+          Daily Visitors — Last 30 Days
+          <div class="period-tabs" style="margin-left:auto">
+            <button class="period-tab active" onclick="loadVisitorsPeriod(7,this)">7d</button>
+            <button class="period-tab" onclick="loadVisitorsPeriod(30,this)">30d</button>
+          </div>
+        </h3>
+        <div class="chart-container" style="height:300px">
+          <canvas id="visitors-detail-chart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── SESSIONS PANEL ── -->
+    <div id="panel-sessions" style="display:none">
+      <div class="table-card">
+        <h3>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2">
+            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+          </svg>
+          All Recent Sessions (last 50)
+        </h3>
+        <div id="all-sessions-wrap">
+          <div class="admin-loading"><div class="spin"></div><span>Loading…</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── WEEKLY PANEL ── -->
+    <div id="panel-weekly" style="display:none">
+      <div class="stat-cards" style="margin-bottom:20px" id="weekly-stats"></div>
+      <div class="chart-grid-3">
+        <div class="chart-card">
+          <h3>Visitors</h3>
+          <div class="chart-container"><canvas id="weekly-visitors-chart"></canvas></div>
+        </div>
+        <div class="chart-card">
+          <h3>Sessions</h3>
+          <div class="chart-container"><canvas id="weekly-sessions-chart"></canvas></div>
+        </div>
+        <div class="chart-card">
+          <h3>Avg WPM</h3>
+          <div class="chart-container"><canvas id="weekly-wpm-chart"></canvas></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── ANONYMOUS PANEL ── -->
+    <div id="panel-anonymous" style="display:none">
+      <div class="table-card">
+        <h3>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2">
+            <circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 1 0-16 0"/>
+          </svg>
+          Anonymous Visitors — name asked on first visit
+        </h3>
+        <div id="anon-table-wrap">
+          <div class="admin-loading"><div class="spin"></div><span>Loading…</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── FEEDBACK PANEL ── -->
+    <div id="panel-feedback" style="display:none">
+      <div class="table-card">
+        <h3>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+          </svg>
+          User Feedback & Messages
+        </h3>
+        <div id="feedback-table-wrap">
+          <div class="admin-loading"><div class="spin"></div><span>Loading…</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── USERS PANEL ── -->
+    <div id="panel-users" style="display:none">
+      <div class="table-card">
+        <h3>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+          </svg>
+          All Visitors — by Device (last 100)
+        </h3>
+        <div id="users-table-wrap">
+          <div class="admin-loading"><div class="spin"></div><span>Loading users…</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── YEARLY PANEL ── -->
+    <div id="panel-yearly" style="display:none">
+      <div class="chart-card">
+        <h3>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2">
+            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+          </svg>
+          Monthly Visitors — Last 12 Months
+        </h3>
+        <div class="chart-container" style="height:320px">
+          <canvas id="yearly-chart"></canvas>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+</div><!-- /admin-wrap -->
+
+<!-- Firebase SDKs -->
+<!-- Firebase SDKs -->
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+
+<!-- Firebase config -->
+<script src="../firebase/config.js"></script>
+<script src="../firebase/db.js"></script>
+
+<!-- loadAdminDashboard lives in tracker.js -->
+<script src="../assets/js/tracker.js"></script>
+
+<!-- Admin scripts -->
+<script src="js/admin-auth.js"></script>
+<script src="js/admin-stats.js"></script>
+<script src="js/admin-charts.js"></script>
+
+
+<script>
+function toggleAdminTheme() {
+  const html = document.documentElement;
+  const isDark = html.getAttribute('data-theme') === 'dark';
+  html.setAttribute('data-theme', isDark ? 'light' : 'dark');
+  localStorage.setItem('admin_theme', isDark ? 'light' : 'dark');
+}
+
+function handleSidebarClick(el, evt) {
+  if (evt) evt.stopPropagation();
+  const name = el.dataset.panel;
+  if (!name) return;
+  showPanel(name);
+  /* Highlight active */
+  document.querySelectorAll('.sb-item').forEach(b => b.classList.remove('active'));
+  el.classList.add('active');
+  /* Close mobile sidebar */
+  if (window.innerWidth <= 768) {
+    document.getElementById('sidebar')?.classList.remove('open');
+    document.getElementById('sidebar-overlay')?.classList.remove('open');
+  }
+}
+
+function toggleAdminSidebar() {
+  const sb = document.getElementById('sidebar');
+  const ov = document.getElementById('sidebar-overlay');
+  if (!sb) return;
+  const isOpen = sb.classList.toggle('open');
+  if (ov) ov.classList.toggle('open', isOpen);
+}
+
+/* Close sidebar when clicking outside on mobile */
+document.addEventListener('click', function(e) {
+  const sb = document.getElementById('sidebar');
+  const ov = document.getElementById('sidebar-overlay');
+  if (!sb) return;
+  if (sb.classList.contains('open') &&
+      !sb.contains(e.target) &&
+      !e.target.closest('.admin-hamburger')) {
+    sb.classList.remove('open');
+    if (ov) ov.classList.remove('open');
+  }
+}, true);
+
+// Load saved theme
+(function() {
+  const t = localStorage.getItem('admin_theme') || 'dark';
+  document.documentElement.setAttribute('data-theme', t);
+})();
+function handleSidebarClick(el, evt) {
+  if (evt) { evt.stopPropagation(); }
+  const name = el.dataset.panel;
+  if (!name) return;
+  document.querySelectorAll('.sb-item').forEach(b => b.classList.remove('active'));
+  el.classList.add('active');
+  showPanel(name);
+  /* Close mobile sidebar */
+  closeSidebar();
+}
+
+function toggleAdminSidebar() {
+  const sb = document.getElementById('sidebar');
+  const ov = document.getElementById('sidebar-overlay');
+  if (!sb) return;
+  const opening = !sb.classList.contains('open');
+  if (opening) {
+    sb.classList.add('open');
+    if (ov) ov.classList.add('open');
+  } else {
+    closeSidebar();
+  }
+}
+
+function closeSidebar() {
+  if (window.innerWidth > 768) return; /* desktop: never close */
+  const sb = document.getElementById('sidebar');
+  const ov = document.getElementById('sidebar-overlay');
+  if (sb) sb.classList.remove('open');
+  if (ov) ov.classList.remove('open');
+}
+</script>
+</body>
+</html>

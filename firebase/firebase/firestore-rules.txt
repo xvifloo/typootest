@@ -1,0 +1,37 @@
+FIREBASE CONSOLE → FIRESTORE → RULES এ এটা paste করো:
+
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    match /visitors/{docId} {
+      allow read:  if request.auth != null;
+      allow write: if true;
+    }
+
+    match /daily_stats/{date} {
+      allow read:  if request.auth != null;
+      allow write: if true;
+    }
+
+    match /sessions/{docId} {
+      allow read:  if request.auth != null;
+      allow write: if true;
+    }
+
+    match /feedback/{docId} {
+      allow read:  if request.auth != null;
+      allow write: if true;
+    }
+
+    match /users/{uid} {
+      allow read:  if request.auth != null;
+      allow write: if request.auth != null && request.auth.uid == uid;
+    }
+
+    match /admin_meta/{docId} {
+      allow read:  if request.auth != null;
+      allow write: if request.auth != null;
+    }
+  }
+}
